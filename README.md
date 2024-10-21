@@ -31,5 +31,5 @@ The primary objective of this project is to accurately translate the Figma desig
 
 ## Contribute
 
-1. **Clone project**: `git clone https://github.com/Fernanda-Kipper/Readme-Templates.git`
+1. **Clone project**: `gh repo clone MarcosDevBr/SollerResponsiveWeb`
 2. **Create feature/branch**: `git checkout -b feature/NAME`
