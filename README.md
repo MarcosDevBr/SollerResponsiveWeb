@@ -1,6 +1,6 @@
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0237ba75-9ebd-488e-b921-58a20d8361b8.png" width="700px"/>
-</pdiv>
+<p align="center">
+  <img width="700" height="300" src="src/assets/sollerWebImage.png"/>
+</p>
 
 # Project Name: Soller UX Project 
 
