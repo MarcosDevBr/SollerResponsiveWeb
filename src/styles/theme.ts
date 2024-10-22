@@ -11,7 +11,7 @@ export const light: DefaultTheme = {
     SECONDARY_LIGHT: '#8B93FF',
     SECONDARY_DARK: '#003BCB',
 
-    SYSTEM_BACKGROUND: '#EEEEEE',
+    SYSTEM_BACKGROUND: '#FFFFFF',
     BORDER_COLOR: '#E8E8E8',
     HOVER_COLOR: '#E8E8E8',
     ACTIVE_COLOR: '#bcc0c78c',
