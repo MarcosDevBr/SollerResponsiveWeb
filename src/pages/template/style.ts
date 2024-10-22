@@ -6,7 +6,6 @@ const TemplateContainer = tw.div`
     w-full
     h-full
     py-0
-    bg-[#fafafa]
 `
 
 const Header = tw.div`

@@ -1,2 +1,7 @@
-export interface INavbar {}
+export interface INavItem {
+    path: string;
+    label: string;
+}
+export interface INavbar {
+}
 

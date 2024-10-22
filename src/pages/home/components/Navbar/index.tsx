@@ -1,37 +1,34 @@
-import { INavbar } from "./model";
-import { NavContainer } from "./style";
-import { SollerLogo } from '../../../../assets'
-import { NavLink, useNavigate } from "react-router-dom";
+import { INavbar, INavItem } from "./model";
+import { NavContainer, NavLeft } from "./style";
+import { NavLink } from "react-router-dom";
+import LogoText from "../../../../components/LogoText";
 
 export default function Navbar(_props: INavbar) {
 
-    const navigate = useNavigate();
-
-    const goToProductsPage = () => {
-        navigate('/products')
-    }
-
+    const navItems: INavItem[] = [
+        { path: "/products", label: "Products" },
+        { path: "/solutions", label: "Solutions" },
+        { path: "/services", label: "Services" },
+        { path: "/configure", label: "Configure" },
+    ];
+    
     return (
         <NavContainer className="navbar">
-            <img src={SollerLogo} className="logo" width={300} onClick={goToProductsPage}/>
+            
+            <NavLeft className="navbar-left">
 
-            <ul>
-                <li>
-                    <NavLink to="/products" >Products</NavLink>
-                </li>
+                <LogoText/>
 
-                <li>
-                    <NavLink to="/solutions" >Solutions</NavLink>
-                </li>
+                <ul>
+                    {navItems.map((item) => (
+                        <li key={item.path} className="menu_item">
+                            <NavLink to={item.path}>{item.label}</NavLink>
+                        </li>
+                    ))}
+                </ul>
+                
+            </NavLeft>
 
-                <li>
-                    <NavLink to="/services" >Services</NavLink>
-                </li>
-
-                <li>
-                    <NavLink to="/configure" >Configure</NavLink>
-                </li>
-            </ul>
         </NavContainer>
     )
 }

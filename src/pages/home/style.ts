@@ -5,7 +5,7 @@ const Container = tw.div`
     flex-col
     w-full
     h-screen
-    bg-[#fafafa]
+    bg-[#FFFFFF]
     font-roboto
 `
 

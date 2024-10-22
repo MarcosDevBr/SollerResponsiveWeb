@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const Header = (_props: IHeader) => {
 
     return (
-        <HeaderContainer>
+        <HeaderContainer className="header">
            <Navbar/>
         </HeaderContainer>
     );
