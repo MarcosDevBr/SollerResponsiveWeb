@@ -1,4 +1,3 @@
-import React from "react";
 import { INotFound } from "./model";
 import { NotFoundContainer } from "./style";
 import { Link } from "react-router-dom";

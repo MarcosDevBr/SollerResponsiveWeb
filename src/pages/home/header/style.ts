@@ -4,8 +4,6 @@ const HeaderContainer = styled.header`
     z-index: 500;
     background-color: var(--white);
     height: 6.25rem;
-    padding-left: 11%;
-    padding-right: 11%;
     transition: color .25s, background-color .25s;
     display: flex;
     position: fixed;

@@ -1,24 +1,19 @@
-import React from 'react';
-import tw from 'tailwind-styled-components'
-
-import { RouterProvider } from "react-router-dom";
-
-import { light } from '../styles/theme';
+import tw from 'tailwind-styled-components';
+import { RouterProvider } from 'react-router-dom';
 import { router } from './paths';
 
-const MainRoutes = () => (
-    <Container bgColor={light.SYSTEM_BACKGROUND}>
-        <RouterProvider router={router}/>
-    </Container>
-);
+export default function MainRoutes() {
+    return (
+        <Container>
+            <RouterProvider router={router} />
+        </Container>
+    );
+}
 
-export default MainRoutes;
-
-const Container = tw.div<{ bgColor: string }>`  
+const Container = tw.div`  
     flex    
     flex-col
     w-full
     h-full
     overflow-hidden
-    ${props => `bg-${props.bgColor}`}
 `;

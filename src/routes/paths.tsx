@@ -1,32 +1,24 @@
-import React from "react";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Products from "../pages/Products";
 import Solutions from "../pages/Solutions";
 import Services from "../pages/Services";
 import Configure from "../pages/Configure";
-import App from "../App";
+import Home from "../pages/home";
 import NotFound from "../pages/NotFount";
 
 export const router = createBrowserRouter([
     { 
         path: "/", 
-        element: <App/>,
-        errorElement: <NotFound/>,
+        element: <Home />,
+        children: [
+            { index: true, element: <Navigate to="/products" replace /> },
+            { path: "products", element: <Products /> },
+            { path: "solutions", element: <Solutions /> },
+            { path: "services", element: <Services /> },
+            { path: "configure", element: <Configure /> },
+           
+        ],
+        
     },
-    { 
-        path: "/Products", 
-        element: <Products/>
-    },
-    { 
-        path: "/Solutions", 
-        element: <Solutions/> 
-    },
-    { 
-        path: "/Services", 
-        element: <Services/> 
-    },
-    { 
-        path: "/Configure", 
-        element: <Configure/> 
-    },
-])
+    { path: "*", element: <NotFound /> } 
+]);

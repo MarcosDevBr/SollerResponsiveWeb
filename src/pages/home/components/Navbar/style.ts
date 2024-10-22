@@ -20,8 +20,13 @@ const NavContainer = styled.div`
         cursor: pointer;
     }
 
-    logo {
+    a.active {
+        color: #F59E0B;
+    }
+
+    .logo {
         width: 50;
+        cursor: pointer;
     }
 `
 

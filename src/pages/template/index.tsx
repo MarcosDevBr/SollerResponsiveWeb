@@ -1,4 +1,3 @@
-import React from "react"
 import { TemplateContainer, Header, Content, Footer } from "./style"
 import { ITemplateHeaderContentProps } from "./model"
 
