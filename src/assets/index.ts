@@ -1,10 +1,10 @@
 
-import SollerLogo from './soller_logo.png';
-import SollerLogoPlusText from './soller_logoPlusText.png';
+import SollerLogo from './soller_logo.png'
 import SollerWebImage from './sollerWebImage.png';
+import SollerProductsImage from './soller_products_img.png';
 
 export {
-  SollerLogoPlusText,
   SollerLogo,
-  SollerWebImage
+  SollerWebImage,
+  SollerProductsImage
 };
