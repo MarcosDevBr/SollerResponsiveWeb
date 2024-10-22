@@ -20,7 +20,7 @@ export default createGlobalStyle`
         display: flex;
 
         color:${(props) => props.theme.ITENS_TEXT};
-        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
         font-size: 13px;
         font-variant: tabular-nums;
         line-height: 1.5715;
